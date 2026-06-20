@@ -12,7 +12,7 @@ document.getElementById("formDangNhap").addEventListener("submit", async functio
     const p = document.getElementById("log_password").value.trim();
 
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/login', {
+        const response = await fetch('https://het-tien-chua-backend.onrender.com/api/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username: u, password: p })
