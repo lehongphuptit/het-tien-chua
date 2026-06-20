@@ -20,7 +20,7 @@ async function capNhatDropdownNganSach() {
     select.innerHTML = '<option value="">-- Đang tải danh mục... --</option>';
     
     try {
-        const res = await fetch(`http://127.0.0.1:5000/api/get_categories?user_id=${idNguoiDung}`);
+        const res = await fetch(`https://het-tien-chua-backend.onrender.com/api/get_categories?user_id=${idNguoiDung}`);
         const dataRes = await res.json();
         
         select.innerHTML = '<option value="">-- Chọn danh mục --</option>';
