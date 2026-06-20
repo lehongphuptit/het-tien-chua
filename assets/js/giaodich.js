@@ -21,7 +21,7 @@ async function capNhatDropdownDanhMuc() {
     select.innerHTML = '<option value="">-- Đang tải danh mục... --</option>';
     
     try {
-        const res = await fetch(`http://127.0.0.1:5000/api/get_categories?user_id=${idNguoiDung}`);
+        const res = await fetch(`https://het-tien-chua-backend.onrender.com/api/get_categories?user_id=${idNguoiDung}`);
         const dataRes = await res.json();
         
         select.innerHTML = '<option value="">-- Chọn danh mục --</option>';
@@ -61,7 +61,7 @@ async function luuGiaoDichMoi() {
 
     try {
         // Gửi thẳng sang API của Python
-        const res = await fetch('http://127.0.0.1:5000/api/add_transaction', {
+        const res = await fetch('https://het-tien-chua-backend.onrender.com/api/add_transaction', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -104,7 +104,7 @@ async function veBangGiaoDich() {
 
     try {
         // Gọi API lấy dữ liệu
-        const res = await fetch(`http://127.0.0.1:5000/api/get_transactions?user_id=${idNguoiDung}`);
+        const res = await fetch(`https://het-tien-chua-backend.onrender.com/api/get_transactions?user_id=${idNguoiDung}`);
         const dataRes = await res.json();
         
         if (dataRes.success) {
@@ -154,7 +154,7 @@ window.xoaGiaoDich = async function(idCanXoa) {
     }).then(async (result) => {
         if (result.isConfirmed) {
             try {
-                const res = await fetch('http://127.0.0.1:5000/api/delete_transaction', {
+                const res = await fetch('https://het-tien-chua-backend.onrender.com/api/delete_transaction', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: idCanXoa })
