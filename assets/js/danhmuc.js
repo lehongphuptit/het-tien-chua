@@ -23,7 +23,7 @@ async function luuDanhMucMoi() {
     }
 
     try {
-        const res = await fetch('http://127.0.0.1:5000/api/add_category', {
+        const res = await fetch('https://het-tien-chua-backend.onrender.com/api/add_category', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -55,7 +55,7 @@ async function veBangDanhMuc() {
     tbody.innerHTML = "<tr><td colspan='4' style='text-align:center;'>Đang tải...</td></tr>";
 
     try {
-        const res = await fetch(`http://127.0.0.1:5000/api/get_categories?user_id=${idNguoiDung}`);
+        const res = await fetch(`https://het-tien-chua-backend.onrender.com/api/get_categories?user_id=${idNguoiDung}`);
         const dataRes = await res.json();
 
         if (dataRes.success) {
@@ -100,7 +100,7 @@ window.xoaDanhMuc = async function(idCanXoa) {
     }).then(async (result) => {
         if (result.isConfirmed) {
             try {
-                const res = await fetch('http://127.0.0.1:5000/api/delete_category', {
+                const res = await fetch('https://het-tien-chua-backend.onrender.com/api/delete_category', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ id: idCanXoa })
