@@ -317,7 +317,7 @@ body.dark-mode .nav-link.active {
     position: absolute;
     cursor: pointer;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #cbd5e1; /* Màu xám khi tắt */
+    background-color: #cbd5e1;
     transition: .4s;
     border-radius: 34px;
 }
@@ -336,9 +336,31 @@ body.dark-mode .nav-link.active {
 }
 
 input:checked + .slider-goolge {
-    background-color: #2563eb; /* Màu xanh biển khi bật */
+    background-color: #2563eb;
 }
 
 input:checked + .slider-goolge:before {
     transform: translateX(26px);
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        padding: 10px;
+    }
+    .table-container, table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    button, input, select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hinh-anh-trang-tri {
+        display: none; 
+    }
 }
