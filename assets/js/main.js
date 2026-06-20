@@ -227,7 +227,7 @@ if (btnCaiDat) {
                 // 2. GỬI LÊN PYTHON ĐỂ LƯU DATABASE 
                 if (data.newName && data.newName !== localStorage.getItem('USER_NAME')) {
                     try {
-                        const res = await fetch('http://127.0.0.1:5000/api/update_profile', {
+                        const res = await fetch('https://het-tien-chua-backend.onrender.com/api/update_profile', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
@@ -308,7 +308,7 @@ window.khoiTaoTrangHoSo = function() {
 
             try {
                 // Gọi sang Python để cập nhật Neon.tech
-                const res = await fetch('http://127.0.0.1:5000/api/update_profile', {
+                const res = await fetch('https://het-tien-chua-backend.onrender.com/api/update_profile', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -342,7 +342,7 @@ window.layDanhSachGiaoDich = async function() {
     if (!idNguoiDung) return [];
 
     try {
-        const res = await fetch(`http://127.0.0.1:5000/api/get_transactions?user_id=${idNguoiDung}`);
+        const res = await fetch(`https://het-tien-chua-backend.onrender.com/api/get_transactions?user_id=${idNguoiDung}`);
         const data = await res.json();
         
         if (data.success) {
