@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="dashboard-page">
+    <div class="summary-cards">
+        <div class="card balance">
+            <div class="card-icon"><i class="fa-solid fa-wallet"></i></div>
+            <div class="card-info">
+                <p>Số dư hiện tại</p>
+                <h3 id="tongSoDu">0 ₫</h3>
+            </div>
+        </div>
+        
+        <div class="card income">
+            <div class="card-icon"><i class="fa-solid fa-arrow-trend-up" style="background: #05cd99; padding: 15px; border-radius: 50%; color: white;"></i></div>
+            <div class="card-info">
+                <p>Tổng Thu Nhập</p>
+                <h3 id="tongThuHienThi">0 ₫</h3>
+            </div>
+        </div>
+
+        <div class="card expense">
+            <div class="card-icon"><i class="fa-solid fa-arrow-trend-down" style="background: #ff5b5b; padding: 15px; border-radius: 50%; color: white;"></i></div>
+            <div class="card-info">
+                <p>Tổng Chi Tiêu</p>
+                <h3 id="tongChiHienThi">0 ₫</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container" style="margin-top: 20px;">
+        <h3>Biểu đồ chi tiêu</h3>
+        <div style="height: 300px;">
+            <canvas id="bieuDoChiTieu"></canvas>
+        </div>
+    </div>
+</div>
+</body>
+</html>

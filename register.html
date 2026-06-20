@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - HẾT TIỀN CHƯA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fa-solid fa-user-plus"></i>
+                <h2>Tạo Tài Khoản</h2>
+            </div>
+            
+            <form id="formDangKy">
+                <div class="input-group">
+                    <i class="fa-solid fa-id-card"></i>
+                    <input type="text" id="reg_fullname" placeholder="Họ và tên..." required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="reg_email" placeholder="Email..." required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="reg_username" placeholder="Tên đăng nhập..." required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="reg_password" placeholder="Mật khẩu..." required>
+                </div>
+                
+                <button type="submit" class="btn-login" id="btnDangKy">
+                    Hoàn Tất Đăng Ký
+                </button>
+            </form>
+            
+            <div class="toggle-forms">
+                <p>Đã có tài khoản? <a href="login.html" class="link-text">Đăng nhập ngay</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/register.js"></script>
+</body>
+</html>

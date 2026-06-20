@@ -1,0 +1,19 @@
+.category-list { display: flex; flex-direction: column; gap: 15px; margin-top: 15px; }
+
+.category-item {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #f4f7fe; padding: 15px 20px; border-radius: 10px;
+    border-left: 5px solid #ccc; transition: 0.3s;
+}
+
+.category-item:hover { transform: translateX(5px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+.category-item.type-chi { border-left-color: #ff5b5b; }
+.category-item.type-thu { border-left-color: #05cd99; }
+
+.cat-info { display: flex; align-items: center; gap: 15px; }
+.cat-name { font-weight: bold; color: #2b3674; font-size: 1.1rem; }
+.cat-badge { font-size: 0.8rem; padding: 5px 12px; border-radius: 20px; font-weight: bold; }
+
+.badge-chi { background: #ffe5e5; color: #ff5b5b; }
+.badge-thu { background: #e5f9f4; color: #05cd99; }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - HẾT TIỀN CHƯA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h2>Đăng Nhập</h2>
+            </div>
+            
+            <form id="formDangNhap">
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="log_username" placeholder="Tên đăng nhập..." required autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="log_password" placeholder="Mật khẩu..." required>
+                </div>
+                
+                <button type="submit" class="btn-login" id="btnDangNhap">
+                    Đăng Nhập Ngay
+                </button>
+            </form>
+            
+            <div class="toggle-forms">
+                <p>Chưa có tài khoản? <a href="register.html" class="link-text">Đăng ký tại đây</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

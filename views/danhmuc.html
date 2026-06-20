@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục</title>
+</head>
+<body>
+    <div class="transaction-page">
+        <div class="form-card">
+            <h3><i class="fa-solid fa-folder-plus"></i> Thêm Danh Mục</h3>
+            <form id="formDanhMuc">
+                <div class="form-group">
+                    <label>Tên danh mục</label>
+                    <input type="text" id="tenDanhMuc" placeholder="VD: Tiền nhà, Đổ xăng..." autocomplete="off" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Loại danh mục</label>
+                    <select id="loaiDanhMuc">
+                        <option value="chi">Chi tiêu</option>
+                        <option value="thu">Thu nhập</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit"><i class="fa-solid fa-floppy-disk"></i> Lưu Danh Mục</button>
+            </form>
+        </div>
+
+        <div class="table-card">
+            <h3><i class="fa-solid fa-list"></i> Danh Sách Phân Loại</h3>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #e2e8f0; text-align: left; color: #707eae;">
+                        <th style="padding: 12px 10px;">STT</th>
+                        <th style="padding: 12px 10px;">Tên danh mục</th>
+                        <th style="padding: 12px 10px;">Phân loại</th>
+                    </tr>
+                </thead>
+                <tbody id="bangDanhMuc">
+                    <tr>
+                        <td colspan="3" style="text-align: center; padding: 20px;">Đang tải dữ liệu...</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+</body>
+</html>

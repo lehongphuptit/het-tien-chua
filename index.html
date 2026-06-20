@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hết Tiền Chưa</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link rel="stylesheet" href="assets/css/giaodich.css">
+    <link rel="stylesheet" href="assets/css/danhmuc.css">
+    <link rel="stylesheet" href="assets/css/ngansach.css">
+    <script>
+        if (localStorage.getItem("IS_LOGGED_IN") !== "true") {
+            window.location.href = "login.html"; // Đá văng về trang Đăng nhập
+        }
+    </script>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">      
+            <div class="sidebar-logo" id="logoTrangChu" style="cursor: pointer; padding: 20px 25px;">
+                <h2 style="color: #4318ff; margin: 0;"><i class="fa-solid fa-wallet"></i> Hết Tiền Chưa</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active" data-page="views/tongquan.html">
+                    <i class="fa-solid fa-chart-pie"></i> Tổng quan
+                </a>
+                <a href="#" class="nav-link" data-page="views/giaodich.html">
+                    <i class="fa-solid fa-money-bill-transfer"></i> Giao dịch
+                </a>
+                <a href="#" class="nav-link" data-page="views/danhmuc.html">
+                    <i class="fa-solid fa-layer-group"></i> Danh mục
+                </a>
+                <a href="#" class="nav-link" data-page="views/ngansach.html">
+                    <i class="fa-solid fa-bullseye"></i> Ngân sách
+                </a>
+                <a href="#" class="nav-link" data-page="views/trolyai.html">
+                    <i class="fa-solid fa-robot"></i> Trợ lý AI
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="theme-switch-wrapper">
+                    <span class="theme-switch-text"><i class="fa-solid fa-moon"></i> Dark Mode</span>
+                    <label class="theme-switch" for="checkboxDarkMode">
+                        <input type="checkbox" id="checkboxDarkMode">
+                        <div class="slider-goolge"></div>
+                    </label>
+                </div>
+
+                <a href="#" class="nav-link" data-page="views/hoso.html">
+                    <i class="fa-solid fa-user-pen"></i> Hồ sơ của tôi
+                </a>
+
+                <a href="#" class="logout" id="btnDangXuatHinhIcon"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</a>
+            </div>
+        </aside>
+
+        <div class="main-wrapper">
+            <header class="top-header">
+                <div class="page-title">
+                    <h1 id="tieuDeTrang">Đang tải...</h1>
+                </div>
+                <div class="user-profile">
+                    <span class="user-name">Nguyễn Văn A</span>
+                    <img src="https://ui-avatars.com/api/?name=Nguyen+Van+A&background=e2e8f0&color=2b3674" alt="Avatar" class="avatar">
+                </div>
+            </header>
+
+            <main class="main-content" id="noiDungChinh">
+                </main>
+        </div>
+    </div>
+    <!-- thư viện chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/giaodich.js"></script>
+    <script src="assets/js/danhmuc.js"></script>
+    <script src="assets/js/ngansach.js"></script>
+    <div id="toastBox"></div>
+    </body>
+</html>
