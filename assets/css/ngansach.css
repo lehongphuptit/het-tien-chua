@@ -40,9 +40,9 @@
 
 .progress-bar-fill {
     height: 100%;
-    background: #05cd99; /* Xanh lá: An toàn */
+    background: #05cd99; 
     transition: width 0.8s ease-in-out;
 }
 
-.progress-bar-fill.warning { background: #ffce20; } /* Vàng: Sắp hết */
-.progress-bar-fill.danger { background: #ff5b5b; } /* Đỏ: Vượt ngân sách */
+.progress-bar-fill.warning { background: #ffce20; } 
+.progress-bar-fill.danger { background: #ff5b5b; } 
