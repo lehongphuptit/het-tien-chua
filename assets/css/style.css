@@ -7,18 +7,18 @@
 }
 
 body {
-    background-color: #f4f7fe; /* Nền xám xanh dịu mắt */
+    background-color: #f4f7fe; 
     color: #333;
 }
 
-/* Khung chính chứa toàn bộ website */
+
 .app-container {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Không cho cuộn trang tổng, chỉ cuộn phần nội dung */
+    overflow: hidden;
 }
 
-/* cột điều hướng bên trái*/
+
 .sidebar {
     width: 260px;
     background-color: #ffffff;
@@ -43,7 +43,7 @@ body {
     padding: 0 15px;
 }
 
-/* Các nút menu */
+
 .nav-link, .sidebar-footer a {
     padding: 14px 20px;
     margin-bottom: 8px;
@@ -67,13 +67,10 @@ body {
     background-color: #4318ff;
     color: white;
 }
-
-/* Nút đăng xuất màu đỏ */
 .sidebar-footer { padding: 0 15px; }
 .logout { color: #ff5b5b !important; }
 .logout:hover { background-color: #ffe5e5 !important; }
 
-/* cột giao diện bên phải màn hình*/
 .main-wrapper {
     flex: 1; 
     display: flex;
@@ -95,7 +92,7 @@ body {
     color: #2b3674; 
 }
 
-/* Góc Profile người dùng */
+
 .user-profile { display: flex; align-items: center; gap: 15px; cursor: pointer; }
 .user-name { font-weight: 700; color: #2b3674; }
 .avatar { width: 45px; height: 45px; border-radius: 50%; }
@@ -105,7 +102,7 @@ body {
     overflow-y: auto;
     flex: 1;
 }
-/* giao diện cho DASHBOARD*/
+
 .summary-cards {
     display: flex;
     gap: 20px;
@@ -155,7 +152,7 @@ body {
     font-size: 1.6rem;
 }
 
-/* Phần lưới chứa biểu đồ và thao tác */
+
 .dashboard-grid {
     display: flex;
     gap: 20px;
@@ -183,7 +180,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Nút thao tác nhanh */
+
 .action-buttons {
     display: flex;
     flex-direction: column;
@@ -248,7 +245,7 @@ body {
 .toast.error { border-color: #ff5b5b; color: #2b3674; }
 .toast.error i { color: #ff5b5b; }
 
-/* Hiệu ứng bay vào bay ra */
+
 @keyframes slideIn {
     100% { transform: translateX(0); }
 }
