@@ -46,7 +46,7 @@ def register():
         if conn:
             conn.close()
 
-# 2. API ĐĂNG NHẬP (LOGIN) - PHẦN BRO BỊ THIẾU
+# 2. API ĐĂNG NHẬP (LOGIN)
 @app.route('/api/login', methods=['POST'])
 def login():
     data = request.get_json()
