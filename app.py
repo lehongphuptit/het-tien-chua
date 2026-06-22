@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 app = Flask(__name__)
-CORS(app) 
+CORS(app)
 DATABASE_URL = os.environ.get("DATABASE_URL")
 # 1. API ĐĂNG KÝ (REGISTER)
 @app.route('/api/register', methods=['POST'])
