@@ -224,7 +224,7 @@ def add_category():
     finally:
         if cur: cur.close()
         if conn: conn.close()
-# 9. API XÓA GIAO DỊCH (Đã fix lỗi CORS OPTIONS)
+# 9. API XÓA GIAO DỊCH 
 @app.route('/api/delete_transaction', methods=['POST', 'OPTIONS'])
 def delete_transaction():
     if request.method == 'OPTIONS':
