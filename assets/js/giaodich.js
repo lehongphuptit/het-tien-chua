@@ -68,7 +68,7 @@ async function luuGiaoDichMoi() {
                 user_id: idNguoiDung,
                 soTien: soTien,
                 loai: loai,
-                // Gộp tên danh mục vào ghi chú luôn để database dễ lưu tạm thời
+
                 ghiChu: `[${danhMuc}] ` + ghiChu, 
                 ngay: ngay
             })
@@ -108,7 +108,7 @@ async function veBangGiaoDich() {
         const dataRes = await res.json();
         
         if (dataRes.success) {
-            let danhSach = dataRes.data; // Mảng dữ liệu từ Python trả về
+            let danhSach = dataRes.data;
             tbody.innerHTML = "";
 
             if (danhSach.length === 0) {
@@ -141,14 +141,14 @@ async function veBangGiaoDich() {
 }
 // HÀM XÓA GIAO DỊCH TRÊN MÂY
 window.xoaGiaoDich = async function(idCanXoa) {
-    // Gọi popup SweetAlert2 hỏi cho chắc chắn trước khi xóa
+
     Swal.fire({
         title: 'Bạn có chắc chắn?',
         text: "Khoản tiền này sẽ bốc hơi khỏi hệ thống và không thể khôi phục!",
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#ff5b5b', // Màu đỏ cảnh báo
-        cancelButtonColor: '#a3aed1',  // Màu xám
+        confirmButtonColor: '#ff5b5b', 
+        cancelButtonColor: '#a3aed1',  
         confirmButtonText: '<i class="fa-solid fa-trash"></i> Xóa luôn!',
         cancelButtonText: 'Quay xe'
     }).then(async (result) => {
