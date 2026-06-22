@@ -52,7 +52,7 @@ window.khoiTaoTrangNganSach = async function() {
     const formNganSach = document.getElementById("formNganSach");
     if (formNganSach) {
         formNganSach.addEventListener("submit", function(e) {
-            e.preventDefault(); // 🔥 Dòng bùa chú chặn giật trang về Tổng quan
+            e.preventDefault();
             luuNganSach();
         });
     }
